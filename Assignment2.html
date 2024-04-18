@@ -1,88 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Assignment2</title>
-        <style>
-            table,
-            tr,
-            th,
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML 1 Assignment">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Shailja Atkotiya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment-1</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        div {
+            padding: 20px;
+        }
+
+        .image {
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
             td {
-              
-             border: 2px solid black;
-             border-collapse: collapse;
+
+                border: 4px solid #000;
+                border-style: double;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-right: 30px;
+                padding-left: 0;
             }
-            
-            div{
-                padding:20px;
-            }
-            .image{
-                  table {
-                         border-collapse: collapse;
-                         width: 100%;
-                        }
-                
-                 td {
-                
-                     border: 4px solid #000;
-                     border-style: double;
-                     padding-top: 20px;
-                     padding-bottom: 20px;
-                     padding-right: 30px;
-                     padding-left: 0;
-                    }
-                 
-                }
-            
-        </style>
-        
-    </head>
-    
-    <body>
-        <div>
-         <table style="width:100%">
-             <tr>
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <!-- Added first table using table tag -->
+        <table style="width:100%">
+            <!-- tr tag : table row -->
+            <tr>
+                <!-- td tag : table column -->
                 <td align="left">left</td>
                 <td align="middle">center</td>
                 <td align="right">right</td>
-             </tr>
-             <tr>
+            </tr>
+            <tr>
                 <td align="left">left</td>
                 <td align="middle">center</td>
                 <td align="right">right</td>
-             </tr>
-             <tr>
+            </tr>
+            <tr>
                 <td align="left">left</td>
                 <td align="middle">center</td>
                 <td align="right">right</td>
-             </tr>
-            
-         </table>
-        </div>
-        <div>
-         <table style="width: 100%;">
-             <tr>
-                 <th colspan="6">Heading</th>
-             </tr>
-             <tr>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <!-- colspan is kept 6 for letting one cell take the entire column -->
+                <th colspan="6">Heading</th>
+            </tr>
+            <tr>
+                <!-- &nbsp is used when we want to leave some empty space in the table -->
                 <td colspan="6">
                     &nbsp
                 </td>
-             </tr>
-             <tr>
+            </tr>
+            <tr>
+                <!-- for creating a larger cell of row and columns down upto 4 cells -->
                 <td rowspan="4">&nbsp</td>
                 <td>&nbsp</td>
                 <td>&nbsp</td>
                 <td>&nbsp</td>
                 <td>&nbsp</td>
-             </tr>
-             <tr>
+            </tr>
+            <tr>
                 <td>&nbsp</td>
-                <td  rowspan="2" colspan="3">&nbsp</td>
+                <!-- between elongated cell  -->
+                <td rowspan="2" colspan="3">&nbsp</td>
                 <td>&nbsp</td>
-             </tr>
-             <tr>
+            </tr>
+            <tr>
                 <td>&nbsp</td>
-             </tr>
+            </tr>
             <tr>
                 <td>&nbsp</td>
                 <td>&nbsp</td>
@@ -95,53 +107,60 @@
                     &nbsp
                 </td>
             </tr>
-             
-         </table>
-        </div>
-        <div>
-            <table style="width: 100%;">
-                <tr>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td rowspan="4">&nbsp</td>
-                    <td>&nbsp</td>
-                    <td rowspan="4">&nbsp</td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                </tr>
 
-            </table>
-        </div>
-        <div class="image">
-            <table style="width:100%" border-collapse:"none">
-                
-               <tr>
-                <td colspan="3" height="20%" style="background:rgb(49, 83, 49);" >&nbsp</td>
-               </tr>
-               <tr>
+        </table>
+    </div>
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <td rowspan="4">&nbsp</td>
+                <td>&nbsp</td>
+                <td rowspan="4">&nbsp</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+
+        </table>
+    </div>
+   
+    <!-- This div is entirely made for creating a div which is used to add the image functionality -->
+    <div class="image">
+        <table style="width:100%" border-collapse:"none">
+
+            <tr>
+                <!-- here colspan 3 is added for maintaining one cell height upto 3 cols -->
+                <td colspan="3" height="20%" style="background:rgb(49, 83, 49);">&nbsp</td>
+            </tr>
+            <tr>
                 <td width="20%">&nbsp</td>
-                <td ><p><img src=Capture.PNG width="700" height="400" ></p></td>
-                <td width="20%" >&nbsp</td>
-               </tr>
+                <td>
+                    <p><img src='https://images.pexels.com/photos/21338071/pexels-photo-21338071/free-photo-of-a-crescent-moon-is-seen-in-the-dark-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                            alt="This is an moon image" width="700" height="400"></p>
+                </td>
+                <td width="20%">&nbsp</td>
+            </tr>
             <tr>
                 <td colspan="3" style="background:rgb(62, 20, 214);">&nbsp</td>
             </tr>
-            </table>
-        </div>
-    </body>
+        </table>
+    </div>
+</body>
+
 </html>
